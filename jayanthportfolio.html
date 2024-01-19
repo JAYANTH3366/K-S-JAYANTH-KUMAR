@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:ital,wght@0,100;0 ,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&displa y=swap" rel="stylesheet">
+<link rel="stylesheet" href="jayanthpotfolio.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif ;
+    box-sizing: border-box
+}
+    
+ .hero{
+    height: 100vh;
+    width: 120%;
+    background-size: 100%;
+    background-image: url(../IMG_20230621_204729-removebg-01.jpeg);
+    background-position:center;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.logo{
+    font-size: 35px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+span{
+    color: rgb(19, 245, 11);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #23f740;
+    transition: .4s;
+
+
+}
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top:50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.h1{
+    color: red;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+.h3{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+.newslatter form{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f0004c;
+    outline: none;
+    border-radius: 20px;
+
+}
+
+.newslatter form input:last-child{
+
+
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    padding:  10px 30px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 5ppx #000,0px 0px 15px #858585;
+
+    top: 4px;
+    right: 6px;
+    
+}
+.about{
+    width: 100%;
+    padding: 100px 0px ;
+    background-color: #e61111;
+    height: 100%;
+    justify-content: center;
+    
+    
+
+}
+.about text{
+    width: 550px;
+
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin-inline-start: 0%;
+    
+
+}
+
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+     
+
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor:pointer;
+    
+}
+.service{
+    background-color: #858585;
+    width: 100%;
+    padding: 100px 0px;
+    
+
+}
+.title h2{
+    color: white;
+    font-size: 75px ;
+    margin:30px auto;
+    text-align: center;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+}
+.card{
+    height: 200px;
+    width: 300px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+h5{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+}
+.card .button{ 
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+
+    
+    
+
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+
+    
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 30px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.social{
+    display: flex;
+
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background: #f9004d;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #000;
+    
+}
+</style>
+</head>
+<body>
+    
+    <div class="hero">
+      
+        <nav>
+            <h2 class="logo"">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <li><a href="#">Family</a></li>
+
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+
+
+        </nav>
+        <div class="content">
+            <h2 style="color: white;">Hello, My name is </h2>
+            <h1 style="color: red;" >Jayanth <span >Raj</span></h1> 
+            <h3 style="color: white;">I am a btech student</h3>
+            
+            
+            <div class="newslatter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email" >
+                    <input type="submit"  name="submit" value="Lets Us start">
+                    
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <section class="about" >
+        <div class="main">
+
+           
+            
+            
+          <div class="about-text">
+                <h2 style="text-align: center;">About Me</h2>
+                <h5>Developer & <span style="color: rgb(65, 8, 171);" >Learner</span></h5>
+                <p > My name is K.S.JAYANTH KUMAR i am a btech first year student styding in mohan babu university and i am learning this course to improve my skills over a part of web development
+                    and comming to my programing skills i can create a basic website using html and css but still i dont know total css concept ..trying to learn a good concept  </p>
+                <button type="button" style="justify-content: center;" >Lets Talk more about f-nd developer</button>
+            </div> 
+            
+        </div>
+    </section>
+    <div class="service" style="background-color: #101010">
+        <div class="title" >
+            <h2>My Passion</h2>
+
+        </div>
+        <div class="box">
+            <div class="card" >
+                <i class="fas fa-bars" style="color: #f9004d"></i>
+            
+                <h5>web development</h5>
+                <div class="pra"  >
+                    <p> 
+                        To devolop new skills and improve the knowledge over the course </p>
+    
+    
+                    </p>
+    
+                    <p style="text-align: center;" >
+                        <a class="button" href="#" >Read More</a>
+    
+                    </p>
+                
+                </div>
+
+    
+            </div>
+            <div class="card" >
+                
+                <i class="fa-regular fa-bell" style="color: #f9004d;"></i>
+            
+                <h5>web development</h5>
+                <div class="pra" >
+                    <p> 
+                        evry website should be built with two primary goals:firstly.it needs 
+                        to work acroos all devices.secondly.it needs to be fast as possible</p>
+    
+    
+                    </p>
+    
+                    <p style="text-align: center;" >
+                        <a class="button" href="#" >Read More</a>
+    
+                    </p>
+             </div>
+            </div>
+            <div class="card" >
+                
+                <i class="fa-solid fa-chart-bar" style="color: #f9004d;"></i>
+            
+                <h5>web development</h5>
+                <div class="pra" >
+                    <p> 
+                    Doing hard work with smart over the field
+                    </p>
+        
+        
+                    
+                    <p style="text-align: center;" >
+                        <a class="button" href="#" >Read More</a>
+        
+                    </p>
+                
+                </div>
+       </div>
+       
+
+        
+    </div>
+    <div class="contact-me">
+        <br>
+        <p style="color: aqua;">
+            lets make a beautiful website together
+        </p>
+        <br>
+        <a class="button-two" href="#" > Justify great things</a>
+    </div>
+    <footer>
+         <p style="justify-content: center; margin-right: 10px;">
+            Jayanth<span>Raj</span>
+            <br>
+            Thank you for visiting my page
+
+         </p>
+         <div class="social" >
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            
+        </div>
+    </footer>
+    
+        
+    
+   
+
+   
+    
+</body>
+</html> 
